@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .box{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        transition: transform 1s ease-in-out;
+      }
+      .box:hover{
+        /* 회전 시키면서 작아지기까지! transition과 함께 사용하면 쿨!*/
+        transform: rotate(1turn) scale(.5,.5);
+      }
+    </style>
+    <title>Transformations</title>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
