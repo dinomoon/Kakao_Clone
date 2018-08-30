@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .box{
+        background-color: red;
+        font-size: 40px;
+      }
+
+      /* 마우스를 올려놓으면 색이 변함. */
+      .box:hover{
+        background-color: pink;
+      }
+      /* 클릭할 때 색이 변함. */
+      .box:active{
+        background-color: green;
+      }
+      /* 한 번 클릭하면 색이 바뀌고 계속 바뀌어있음. */
+      .box:focus{
+        background-color: blue;
+      }
+      .box:visited{
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea class="box">lalalalala</textarea>
+  </body>
+</html>
