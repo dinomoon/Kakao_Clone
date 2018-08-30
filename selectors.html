@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /*
+      input[type="password"]{
+        background-color: blue;
+      }
+      input[type="submit"]{
+        background-color: red;
+      }
+      */
+      input[required="required"]{
+        background-color: blue;
+      }
+      input[required="required"]{
+        background-color: blue;
+      }
+      input{
+        border: 1px solid yellow;
+      }
+
+      .box {
+        background-color: green;
+        border: 1px solid black;
+        height: 100px;
+      }
+      /* 원하는 위치의 박스 선택 */
+      .box:nth-child(2n+1){
+        background-color: pink;
+      }
+      /* container의 직계인 box만 선택 */
+      .container > .box{
+        background-color: yellow;
+      }
+      .child {
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="box"></div>
+      </div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box">
+        <input type="password" required="required">
+        <input type="submit">
+      </div>
+    </div>
+  </body>
+</html>
