@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    /* 브라우저가 가지고 있는 디폴트값 상쇄 */
+      html, head{
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 400%;
+        background-color: red;
+      }
+      #boxOne{
+        height: 300px;
+        width: 300px;
+        background-color: yellow;
+        position: static;
+        /* 모든 박스의 포지션 디폴트값은 static! */
+      }
+      #boxTwo{
+        height: 300px;
+        width: 100%;
+        background-color: green;
+        position: fixed;
+        left: 30px;
+        /* 상,하,좌,우 간격을 조정해서 원하는 곳에 고정가능 */
+      }
+      /* relative는 부모 박스에! absolute는 자식 박스에! -> 부모 박스 안에서 자식 박스가 움직임! */
+      #boxThree {
+        height: 400px;
+        width: 400px;
+        background-color: yellow;
+        position: relative;
+      }
+      .abs-child {
+        height: 100px;
+        width: 100px;
+        background-color: green;
+        position: absolute;
+        right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="boxOne">
+      <div class="box-child"></div>
+    </div>
+    <div id="boxTwo">
+      <div class="box-child"></div>
+    </div>
+    <div id="boxThree">
+      <div class="abs-child"></div>
+    </div>
+  </body>
+</html>
