@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body, html{
+        height: 100%;
+      }
+      #flexbox{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        height: 100%;
+        flex-direction : row;
+        /*
+        flex-direction: row(가로)가 기본값이고 column을 쓰면 세로로 가능!
+        row일 때는 justify-content 가 수평, align-items는 수직으로 작용!
+        column일 때는 그 반대!
+        */
+        flex-wrap: wrap;
+        /*
+        flex-wrap의 기본값은 nowrap인데 nowrap일 때는 화면을 줄여도 박스가 밑으로
+        내려가지 않고 폭만 줄음. 그런데 wrap일 때는 화면을 줄이면 밑으로 내려감.
+        */
+      }
+      .box{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        border : 1px solid black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="flexbox">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+      <div class="box">9</div>
+      <div class="box">10</div>
+    </div>
+  </body>
+</html>
