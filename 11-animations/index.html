@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .box{
+        width:200px;
+        height: 200px;
+        background-color: red;
+        animation: 2s scale-and-rotate-square infinite ease-in-out;
+      }
+      @keyframes scale-and-rotate-square {
+        /*
+        from{
+          transform: none;
+        }
+        to{
+          transform: rotate(1turn) scale(0.5, 0.5);
+        }
+        */
+        0%{
+          transform: none;
+        }
+        50%{
+          transform: rotate(1turn) scale(0.5, 0.5);
+        }
+        100%{
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
