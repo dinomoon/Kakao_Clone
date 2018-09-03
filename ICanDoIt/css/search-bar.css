@@ -1,0 +1,9 @@
+.search-bar {
+  padding: 10px 25px;
+  position: relative;
+}
+
+.search-bar input {
+  width: 100%;
+  position: absolute;
+}
