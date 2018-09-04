@@ -2,6 +2,14 @@
   background-color: #523737;
   color: white;
   padding: 5px 10px 15px 10px;
+  /*
+  position이 왜 fixed인지..
+  width를 왜 100%로 하는지..
+  (안하면 화면에 딱 안맞음)
+  top:0은 뭔지..?(margin-top과 뭔 차이??)
+  margin-top:0; 으로 하면 간격이 생기고
+  top:0;으로 하면 간격이 안생김..
+  */
   position: fixed;
   width: 100%;
   top: 0;
@@ -19,10 +27,12 @@
 }
 
 .top-header .header__bottom {
+  /* 있고 없고 차이 없는데...? */
   margin: 0, 10px;
 }
 
 .top-header .header__column {
+  /* 위의 칼럼들과 아래 칼럼들의 간격을 맞춰주는 듯 */
   width: 33%;
 }
 
